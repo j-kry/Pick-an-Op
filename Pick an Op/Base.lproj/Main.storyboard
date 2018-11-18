@@ -1,24 +1,269 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rainbow.ttf">
+            <string>Rainbow</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pick_an_Op" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70S-e9-1a8">
+                                <rect key="frame" x="32" y="428" width="350" height="70"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue Recruit" translatesAutoresizingMaskIntoConstraints="NO" id="Ejp-My-g4P">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="3Mn-3a-41w"/>
+                                            <constraint firstAttribute="width" constant="70" id="UwL-Tb-hrm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yellow Recruit" translatesAutoresizingMaskIntoConstraints="NO" id="7sj-Nr-CDi">
+                                        <rect key="frame" x="70" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="TAK-Lc-VNr"/>
+                                            <constraint firstAttribute="height" constant="70" id="ZPv-db-0dr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orange Recruit" translatesAutoresizingMaskIntoConstraints="NO" id="Spy-sk-zoN">
+                                        <rect key="frame" x="140" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="BGi-XV-EPK"/>
+                                            <constraint firstAttribute="width" constant="70" id="l0K-cG-yOT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Red Recruit" translatesAutoresizingMaskIntoConstraints="NO" id="eRP-8D-GpJ">
+                                        <rect key="frame" x="210" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="esf-10-VoN"/>
+                                            <constraint firstAttribute="width" constant="70" id="nEm-l3-8IN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green Recruit" translatesAutoresizingMaskIntoConstraints="NO" id="2WP-8Y-naq">
+                                        <rect key="frame" x="280" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="47V-Iq-qy2"/>
+                                            <constraint firstAttribute="width" constant="70" id="GuJ-kR-Pgb"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yzA-oC-sR7">
+                                <rect key="frame" x="32" y="589" width="350" height="70"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue Recruit" translatesAutoresizingMaskIntoConstraints="NO" id="hJb-nz-mxG">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="XN3-5H-cad"/>
+                                            <constraint firstAttribute="width" constant="70" id="leM-dD-WPE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yellow Recruit" translatesAutoresizingMaskIntoConstraints="NO" id="HbP-uK-s0o">
+                                        <rect key="frame" x="70" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="OVq-zv-8UF"/>
+                                            <constraint firstAttribute="height" constant="70" id="QaH-UH-EXS"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orange Recruit" translatesAutoresizingMaskIntoConstraints="NO" id="vC4-mD-919">
+                                        <rect key="frame" x="140" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="vLy-Y0-aQ8"/>
+                                            <constraint firstAttribute="height" constant="70" id="wBi-SD-eX0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Red Recruit" translatesAutoresizingMaskIntoConstraints="NO" id="eF1-Ld-PDB">
+                                        <rect key="frame" x="210" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="Z9J-Jg-v6a"/>
+                                            <constraint firstAttribute="height" constant="70" id="tfB-AM-98B"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green Recruit" translatesAutoresizingMaskIntoConstraints="NO" id="Vnl-it-5Xb">
+                                        <rect key="frame" x="280" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Zu8-fn-k8R"/>
+                                            <constraint firstAttribute="width" constant="70" id="epL-B4-Wnn"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBT-Eq-zFr">
+                                <rect key="frame" x="134" y="506" width="150" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="GgW-cj-KQC"/>
+                                    <constraint firstAttribute="width" constant="150" id="vf4-HA-BJL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rainbow" family="Rainbow" pointSize="40"/>
+                                <state key="normal" title="Attacking Team"/>
+                                <connections>
+                                    <action selector="atkTeamBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FaI-Nn-Hvf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVQ-2L-NTR">
+                                <rect key="frame" x="134" y="667" width="150" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="cgy-Uc-Hwy"/>
+                                    <constraint firstAttribute="width" constant="150" id="f4A-7K-Ufc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rainbow" family="Rainbow" pointSize="40"/>
+                                <state key="normal" title="Defending Team"/>
+                                <connections>
+                                    <action selector="dfTeamBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z5T-Ac-Ty1"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeO-qs-ALx">
+                                <rect key="frame" x="238" y="121" width="156" height="248"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Defend Small" translatesAutoresizingMaskIntoConstraints="NO" id="jWY-ir-Kfv">
+                                        <rect key="frame" x="8" y="8" width="140" height="134"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="134" id="12o-cX-8Ut"/>
+                                            <constraint firstAttribute="width" constant="140" id="V1w-2O-y9W"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valkyrie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2p-hE-dED">
+                                        <rect key="frame" x="8" y="150" width="140" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="cVF-1a-uUX"/>
+                                            <constraint firstAttribute="width" constant="140" id="yAZ-7j-aEa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rainbow" family="Rainbow" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgA-X9-4Dp">
+                                        <rect key="frame" x="8" y="199" width="140" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="37K-uz-vo3"/>
+                                            <constraint firstAttribute="height" constant="49" id="pZs-Gk-Cof"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rainbow" family="Rainbow" pointSize="40"/>
+                                        <state key="normal" title="Defender"/>
+                                        <connections>
+                                            <action selector="defenderBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Wo-We-MZf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="jWY-ir-Kfv" firstAttribute="top" secondItem="NeO-qs-ALx" secondAttribute="topMargin" id="7Th-d2-d9W"/>
+                                    <constraint firstItem="jWY-ir-Kfv" firstAttribute="trailing" secondItem="NeO-qs-ALx" secondAttribute="trailingMargin" id="8Lf-Va-f7A"/>
+                                    <constraint firstAttribute="bottom" secondItem="hgA-X9-4Dp" secondAttribute="bottom" id="Kr7-qY-6VN"/>
+                                    <constraint firstItem="q2p-hE-dED" firstAttribute="top" secondItem="jWY-ir-Kfv" secondAttribute="bottom" constant="8" symbolic="YES" id="aL1-GK-v4s"/>
+                                    <constraint firstItem="jWY-ir-Kfv" firstAttribute="leading" secondItem="NeO-qs-ALx" secondAttribute="leadingMargin" id="fKe-ne-Qbj"/>
+                                    <constraint firstItem="q2p-hE-dED" firstAttribute="leading" secondItem="hgA-X9-4Dp" secondAttribute="leading" id="inD-zD-EFM"/>
+                                    <constraint firstItem="jWY-ir-Kfv" firstAttribute="leading" secondItem="q2p-hE-dED" secondAttribute="leading" id="jaS-Yb-ifc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TbP-L3-8hu">
+                                <rect key="frame" x="20" y="121" width="156" height="248"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Attack Small" translatesAutoresizingMaskIntoConstraints="NO" id="ti9-OZ-d3R">
+                                        <rect key="frame" x="8" y="8" width="140" height="135"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="135" id="DKR-vm-Cvn"/>
+                                            <constraint firstAttribute="width" constant="140" id="Wx6-wx-eZM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hibana" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBw-7E-cZg">
+                                        <rect key="frame" x="8" y="151" width="140" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="K6f-bG-VWX"/>
+                                            <constraint firstAttribute="width" constant="140" id="kht-Zj-ppK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rainbow" family="Rainbow" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KG8-ZH-jLA">
+                                        <rect key="frame" x="8" y="199" width="140" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="VWa-X6-FQB"/>
+                                            <constraint firstAttribute="width" constant="140" id="fnR-pv-rvO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rainbow" family="Rainbow" pointSize="40"/>
+                                        <state key="normal" title="ATTACKER"/>
+                                        <connections>
+                                            <action selector="attackerBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4mo-Zg-8st"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="KG8-ZH-jLA" secondAttribute="bottom" id="6HU-MP-f8v"/>
+                                    <constraint firstItem="ti9-OZ-d3R" firstAttribute="trailing" secondItem="TbP-L3-8hu" secondAttribute="trailingMargin" id="76p-mb-FDg"/>
+                                    <constraint firstItem="iBw-7E-cZg" firstAttribute="leading" secondItem="KG8-ZH-jLA" secondAttribute="leading" id="7sk-jw-bu8"/>
+                                    <constraint firstItem="iBw-7E-cZg" firstAttribute="top" secondItem="ti9-OZ-d3R" secondAttribute="bottom" constant="8" symbolic="YES" id="9Ob-52-1ha"/>
+                                    <constraint firstItem="ti9-OZ-d3R" firstAttribute="top" secondItem="TbP-L3-8hu" secondAttribute="topMargin" id="B5V-gs-woy"/>
+                                    <constraint firstItem="ti9-OZ-d3R" firstAttribute="leading" secondItem="TbP-L3-8hu" secondAttribute="leadingMargin" id="P6Z-9a-xfq"/>
+                                    <constraint firstItem="ti9-OZ-d3R" firstAttribute="leading" secondItem="iBw-7E-cZg" secondAttribute="leading" id="idD-z4-WxD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TbP-L3-8hu" firstAttribute="top" secondItem="NeO-qs-ALx" secondAttribute="top" id="0EW-l4-Np6"/>
+                            <constraint firstItem="TbP-L3-8hu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="3B2-6o-VFY"/>
+                            <constraint firstItem="70S-e9-1a8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ByD-KC-AUT"/>
+                            <constraint firstItem="70S-e9-1a8" firstAttribute="leading" secondItem="yzA-oC-sR7" secondAttribute="leading" id="Jht-LK-6xi"/>
+                            <constraint firstItem="TbP-L3-8hu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ton-uy-Maw"/>
+                            <constraint firstItem="jVQ-2L-NTR" firstAttribute="top" secondItem="yzA-oC-sR7" secondAttribute="bottom" constant="8" symbolic="YES" id="V4h-Up-08a"/>
+                            <constraint firstItem="TbP-L3-8hu" firstAttribute="bottom" secondItem="NeO-qs-ALx" secondAttribute="bottom" id="ZHf-d7-LV1"/>
+                            <constraint firstItem="NeO-qs-ALx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eeQ-XR-1as"/>
+                            <constraint firstItem="70S-e9-1a8" firstAttribute="top" secondItem="TbP-L3-8hu" secondAttribute="bottom" constant="59" id="fBX-YE-WbP"/>
+                            <constraint firstAttribute="bottom" secondItem="jVQ-2L-NTR" secondAttribute="bottom" constant="20" symbolic="YES" id="gG5-m8-c9Q"/>
+                            <constraint firstItem="CBT-Eq-zFr" firstAttribute="leading" secondItem="jVQ-2L-NTR" secondAttribute="leading" id="ge7-RK-hKj"/>
+                            <constraint firstItem="CBT-Eq-zFr" firstAttribute="top" secondItem="70S-e9-1a8" secondAttribute="bottom" constant="8" symbolic="YES" id="mXM-hu-PIQ"/>
+                            <constraint firstItem="CBT-Eq-zFr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="npF-2O-bN6"/>
+                            <constraint firstItem="yzA-oC-sR7" firstAttribute="top" secondItem="CBT-Eq-zFr" secondAttribute="bottom" constant="34" id="sal-JF-QKI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="attackerImg" destination="ti9-OZ-d3R" id="sv0-gF-4e5"/>
+                        <outlet property="attackerLbl" destination="iBw-7E-cZg" id="CWu-gh-Rpg"/>
+                        <outlet property="defenderImg" destination="jWY-ir-Kfv" id="siQ-Qo-WWM"/>
+                        <outlet property="defenderLbl" destination="q2p-hE-dED" id="pOM-nV-3Ib"/>
+                        <outletCollection property="attackCollection" destination="Ejp-My-g4P" collectionClass="NSMutableArray" id="LOi-0N-fgv"/>
+                        <outletCollection property="attackCollection" destination="7sj-Nr-CDi" collectionClass="NSMutableArray" id="Rxa-9H-dat"/>
+                        <outletCollection property="attackCollection" destination="Spy-sk-zoN" collectionClass="NSMutableArray" id="m3k-89-EqY"/>
+                        <outletCollection property="attackCollection" destination="eRP-8D-GpJ" collectionClass="NSMutableArray" id="Dvc-Hx-0VI"/>
+                        <outletCollection property="attackCollection" destination="2WP-8Y-naq" collectionClass="NSMutableArray" id="5H1-Jq-jNN"/>
+                        <outletCollection property="defendCollection" destination="hJb-nz-mxG" collectionClass="NSMutableArray" id="X7v-rq-oz8"/>
+                        <outletCollection property="defendCollection" destination="HbP-uK-s0o" collectionClass="NSMutableArray" id="oFv-yo-vXS"/>
+                        <outletCollection property="defendCollection" destination="vC4-mD-919" collectionClass="NSMutableArray" id="ueM-an-GVz"/>
+                        <outletCollection property="defendCollection" destination="eF1-Ld-PDB" collectionClass="NSMutableArray" id="gxr-4W-gvd"/>
+                        <outletCollection property="defendCollection" destination="Vnl-it-5Xb" collectionClass="NSMutableArray" id="2q1-8J-C2b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-468" y="33"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Attack Small" width="300" height="300"/>
+        <image name="Blue Recruit" width="318" height="318"/>
+        <image name="Defend Small" width="300" height="300"/>
+        <image name="Green Recruit" width="318" height="318"/>
+        <image name="Orange Recruit" width="318" height="318"/>
+        <image name="Red Recruit" width="318" height="318"/>
+        <image name="Yellow Recruit" width="318" height="318"/>
+    </resources>
 </document>
