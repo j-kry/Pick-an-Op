@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					1196CD1D20A9F4BB00C360A8 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -296,7 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "justinkrysinski.Pick-an-Op";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -317,7 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "justinkrysinski.Pick-an-Op";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
