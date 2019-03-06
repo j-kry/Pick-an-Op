@@ -22,17 +22,17 @@ class ViewController: UIViewController {
     var exclude: [Int] = []
     var attackerNum = 0
     var defenderNum = 0
-    var attackerNames = ["Sledge", "Thatcher", "Ash", "Thermite", "Twitch", "Montagne", "Glaz", "Fuze", "Blitz", "IQ", "Buck", "Blackbeard", "Capitao", "Hibana", "Jackal", "Ying", "Zofia", "Dokkaebi", "Lion", "Finka", "Maverick"]
-    var defenderNames = ["Smoke", "Mute", "Castle", "Pulse", "Doc", "Rook", "Kapkan", "Tachanka", "Jager", "Bandit", "Frost", "Valkyrie", "Caveira", "Echo", "Mira", "Lesion", "Ela", "Vigil", "Maestro", "Alibi", "Clash"]
+    var attackerNames = ["Sledge", "Thatcher", "Ash", "Thermite", "Twitch", "Montagne", "Glaz", "Fuze", "Blitz", "IQ", "Buck", "Blackbeard", "Capitao", "Hibana", "Jackal", "Ying", "Zofia", "Dokkaebi", "Lion", "Finka", "Maverick", "Nomad", "Gridlock"]
+    var defenderNames = ["Smoke", "Mute", "Castle", "Pulse", "Doc", "Rook", "Kapkan", "Tachanka", "Jager", "Bandit", "Frost", "Valkyrie", "Caveira", "Echo", "Mira", "Lesion", "Ela", "Vigil", "Maestro", "Alibi", "Clash", "Kaid", "Mozzie"]
 	
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for index in 0...20{
+        for index in 0...22{
             attackers.append(UIImage.init(named: "\(index).png")!)
         }
         
-        for index in 0...20 {
+        for index in 0...22 {
             defenders.append(UIImage.init(named: "\(index)-df.png")!)
         }
         
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
 
     @IBAction func attackerBtn(_ sender: UIButton) {
         
-        attackerNum = Int(arc4random_uniform(21))
+        attackerNum = Int(arc4random_uniform(23))
         attackerImg.image = attackers[attackerNum]
         attackerLbl.text = attackerNames[attackerNum]
         attackerLbl.isHidden = false
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     
     @IBAction func defenderBtn(_ sender: UIButton) {
         
-        defenderNum = Int(arc4random_uniform(21))
+        defenderNum = Int(arc4random_uniform(23))
         defenderImg.image = defenders[defenderNum]
         defenderLbl.text = defenderNames[defenderNum]
         defenderLbl.isHidden = false
@@ -64,9 +64,9 @@ class ViewController: UIViewController {
     @IBAction func atkTeamBtn(_ sender: UIButton) {
         
         for index in 0...4 {
-            attackerNum = Int(arc4random_uniform(21))
+            attackerNum = Int(arc4random_uniform(23))
             while(exclude.contains(attackerNum)) {
-                attackerNum = Int(arc4random_uniform(21))
+                attackerNum = Int(arc4random_uniform(23))
             }
             attackCollection![index].image = attackers[attackerNum]
             exclude.append(attackerNum)
@@ -78,9 +78,9 @@ class ViewController: UIViewController {
     @IBAction func dfTeamBtn(_ sender: UIButton) {
         
         for index in 0...4 {
-            defenderNum = Int(arc4random_uniform(21))
+            defenderNum = Int(arc4random_uniform(23))
             while(exclude.contains(defenderNum)) {
-                defenderNum = Int(arc4random_uniform(21))
+                defenderNum = Int(arc4random_uniform(23))
             }
             defendCollection![index].image = defenders[defenderNum]
             exclude.append(defenderNum)
